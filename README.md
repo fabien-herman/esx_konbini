@@ -31,8 +31,8 @@ start esx_menu_dialog
 
 # Legal
 ### License
-esx_konbini -
-FiveM dev training purpose. I've created an enhanced shops menu to replace vanilla esx_shops.
+esx_konbini - FiveM dev training purpose.
+I've created an enhanced shops menu to replace vanilla esx_shops.
 
 
 Copyright (C) 2015-2022 Herman Fabien
