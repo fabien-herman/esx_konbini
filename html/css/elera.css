@@ -1,0 +1,348 @@
+@font-face {
+	font-family: 'Roboto';
+	src: url('../roboto.ttf');
+}
+
+@font-face {
+	font-family: 'Pixolletta8px';
+	src: url('../Pixolletta8px.ttf');
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+* {
+	font-family: 'Roboto', Verdana, sans-serif;
+}
+
+div#screen {
+	display: flex;
+	width: 100%;
+	height: 100%;
+
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	box-sizing: border-box;
+}
+
+/* NAVBAR */
+
+div#screen div.navbar {
+	width: 100%;
+	max-width: 700px;
+	height: 64px;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	gap: 8px;
+}
+div#screen div.navbar .nav-right {
+	float: right;
+}
+
+div#screen div.navbar .btn {
+	flex-grow: 0;
+	flex-shrink: 0;
+	align-self: flex-start;
+	border: 0;
+	border-radius: 4px;
+
+	text-transform: uppercase;
+	height: 48px;
+	font-size: 1.4em;
+	padding: 0 16px 0 16px;
+	background-color: #ffffffaf;
+}
+
+div#screen div.navbar .btn:hover {
+	background-color: white;
+	cursor: pointer;
+}
+
+/* CHECKOUT */
+
+div#screen > div.checkout {
+	width: 100%;
+	max-width: 700px;
+
+	flex-basis: 100%;
+	flex-grow: 0;
+	flex-shrink: 1;
+	max-height: 600px;
+
+	align-self: center;
+
+	background: #000000e0;
+	border-radius: 8px;
+
+	flex-wrap: nowrap;
+	align-content: flex-start;
+	gap: 8px;
+	display: flex;
+
+	padding: 8px;
+}
+
+
+/* CATALOG */
+
+div#screen div#catalog {
+
+	flex-grow: 0;
+	flex-shrink: 0;
+	flex-basis: 60%;
+	align-self: auto;
+
+	height: 100%;
+	box-sizing: border-box;
+
+	align-content: flex-start;
+	flex-wrap: wrap;
+
+	padding-right: 4px;
+
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+div#screen div#catalog div.product {
+	border: solid 1px #ffffff2f;
+	border-bottom: 0;
+	height: 80px;
+	display: flex;
+}
+/*  sweet_haribo__x64.png  */
+
+div#screen div#catalog div.product:first-child {
+	border-radius: 4px 4px 0 0;
+}
+
+div#screen div#catalog div.product:last-child {
+	border-radius: 0 0 4px 4px;
+	border-bottom: solid 1px #ffffff2f;
+}
+
+div#screen div#catalog div.product:hover {
+	background-color: #ffffff10;
+	cursor: pointer;
+}
+
+div#screen div#catalog div.product:active {
+	background-color: #ffffff6f;
+}
+
+div#screen div#catalog div.product .icon {
+	display: flex;
+	flex-grow: 0;
+	flex-shrink: 0;
+	flex-basis: 64px;
+	align-self: auto;
+
+	padding: 8px;
+}
+
+div#screen div#catalog div.product .info {
+	display: flex;
+	flex-grow: 1;
+	flex-shrink: 0;
+	flex-basis: auto;
+	align-self: auto;
+
+	padding: 8px;
+
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+
+div#screen div#catalog div.product .info * {
+	display: flex;
+	flex-grow: 1;
+	flex-shrink: 0;
+	flex-basis: 100%;
+	color: white;
+
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: stretch;
+}
+
+div#screen div#catalog div.product .info .title {
+	flex-grow: 0;
+	flex-shrink: 0;
+	flex-basis: 70%;
+
+	font-size: 0.9em;
+	align-self: auto;
+}
+
+div#screen div#catalog div.product .info .price {
+	flex-grow: 1;
+	flex-shrink: 0;
+	align-self: auto;
+
+	font-weight: bold;
+	font-size: 1em;
+
+	display: block;
+	text-align: right !important;
+}
+
+div#screen div#catalog div.product .info .subtitle {
+	flex-grow: 0;
+	flex-shrink: 1;
+	flex-basis: 100%;
+
+	font-size: 0.8em;
+	color: #aaa;
+}
+
+
+/* BASKET */
+
+div#screen div.basket {
+	flex-shrink: 1;
+	flex-basis: 100%;
+	align-self: auto;
+
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+
+
+div#screen div.basket hr {
+	border: solid 1px #ffffff2f;
+}
+
+/* LCD */
+
+div#screen div.basket #lcd {
+	width: 100%;
+	flex-basis: 32px;
+	align-self: auto;
+
+	display: block;
+	box-sizing: border-box;
+
+	color: chartreuse;
+	border: solid 1px #ffffff2f;
+	border-radius: 8px;
+	background: #171717;
+	font-family: 'Pixolletta8px', sans-serif !important;
+	font-size: 1.8em;
+	padding: 16px 8px 8px 8px;
+	margin-bottom: 8px;
+
+	text-align: right !important;
+}
+
+/* TICKET */
+
+div#screen div.basket div.ticket {
+	background-color: white;
+	box-sizing: border-box;
+	padding: 16px;
+
+	flex-basis: 100%;
+	align-self: auto;
+
+	overflow-y: auto;
+	overflow-x: hidden;
+	flex-direction: column;
+	border-radius: 8px;
+}
+
+div#screen div.basket div.ticket * {
+	font-family: 'Pixolletta8px', sans-serif !important;
+	font-size: 0.85em;
+}
+
+div#screen div.basket div.ticket div#store {
+	flex-grow: 0;
+	flex-shrink: 0;
+	align-self: auto;
+
+	padding: 8px;
+	color: black;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.2em;
+	line-height: 1.2em;
+}
+
+div#screen div.basket div#items {
+	flex-shrink: 1;
+	flex-basis: 100%;
+	align-self: auto;
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+
+	padding: 16px 0 16px 0;
+}
+
+div#screen div.basket div#items div.item {
+	flex-basis: 100%;
+	height: 16px;
+	max-height: 32px;
+	line-height: 16px;
+}
+
+div#screen div.basket div#items div.item .label {
+	display: block;
+	overflow: hidden;
+	overflow-wrap: break-word;
+	text-overflow: "";
+	max-lines: 2;
+	max-width: 68%;
+	cursor: zoom-out;
+}
+
+div#screen div.basket div#items div.item .label:hover {
+	color: red;
+}
+
+div#screen div.basket div#items div.item .price {
+	float: right;
+	text-align: right;
+	font-weight: bold;
+}
+
+div#screen div.basket div.ticket table {
+	font-size: 1em !important;
+}
+
+div#screen div.basket div.ticket table {
+	text-align: right;
+	float: right;
+}
+
+div#screen div.basket div.ticket table td:last-of-type {
+	width: 96px;
+}
+
+
+/*div#screen div.lcd {*/
+/*	flex-basis: 100%;*/
+/*	flex-grow: 0;*/
+/*	flex-shrink: 0;*/
+/*	align-self: flex-start;*/
+/*	border: 0;*/
+/*	border-radius: 4px;*/
+
+/*	text-transform: uppercase;*/
+/*	height: 48px;*/
+/*	font-size: 1.4em;*/
+
+/*}*/
+
+

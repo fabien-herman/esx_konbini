@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="css/elera.css" type="text/css" />
+	</head>
+	<body>
+		<div id="screen">
+			<div class="navbar">
+				<button class="btn nav-right" id="payment_btn">Payer</button>
+				<button class="btn" id="credit_btn">Crédit 1000€</button>
+				<button class="btn" id="leave_btn" >Quitter</button>
+			</div>
+			<div class="checkout">
+				<div id="catalog">
+					<div class="product" title="water">
+						<div class="icon"><img src="img/bottle_water_x64.png" alt=""></div>
+						<div class="info">
+							<div class="title">Bouteille Evian 0.5L</div>
+							<div class="price">2€</div>
+							<div class="subtitle">Stock: 10</div>
+						</div>
+					</div>
+					<div class="product" title="sandw">
+						<div class="icon"><img src="img/food_sandwich_x64.png" alt=""></div>
+						<div class="info">
+							<div class="title">Sandwich Jambon</div>
+							<div class="price">8€</div>
+							<div class="subtitle">Stock: 10</div>
+						</div>
+					</div>
+				</div>
+				<div class="basket">
+					<div id="lcd">0.00 €</div>
+					<div class="ticket">
+						<div id="store">Tartanpion</div>
+						<hr/>
+						<div id="items">
+							<div class="item">
+								<span class="label">2x Sandwich Jambon Sandwich Jambondsq </span>
+								<span class="price">20 000 000.00</span>
+							</div>
+							<div class="item">
+								<span class="label">2x Sandwich Jambon</span>
+								<span class="price">2.00</span>
+							</div>
+						</div>
+						<hr/>
+							<table>
+								<tr><th style="width: 70%">Currency</th><td >EUR</td></tr>
+								<tr><th >Vat</th><td >20%</td></tr>
+								<tr><th >Net</th><td id="net"></td></tr>
+								<tr><th >Net Vat</th><td id="vat"></td></tr>
+								<tr>
+									<th>Total Gross</th>
+									<th style="font-weight: bold" id="gross"></th>
+								</tr>
+							</table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+		<script src="js/elera.js"></script>
+	</body>
+</html>
