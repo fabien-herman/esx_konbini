@@ -1,35 +1,37 @@
-# esx_menu_dialog
-Simple script used for inputs.
+# esx_konbini
+For FiveM dev training purpose, i've created an enhanced shops menu to replace vanilla esx_shops.
 
 ## Download & Installation
 
-### Using [fvm](https://github.com/qlaffont/fvm-installer)
-```
-fvm install --save --folder=local esx_konbini
-```
-
 ### Using Git
 ```
-cd resources
-git clone https://github.com/ESX-Org/esx_menu_dialog [esx]/esx_menu_dialog
+cd resources\[local]
+git clone https://github.com/fabien-herman/esx_konbini.git
 ```
 
 ### Manually
-- Download https://github.com/ESX-Org/esx_menu_dialog/archive/master.zip
-- Put it in the `[esx]` directory
+- Download https://github.com/fabien-herman/esx_konbini/archive/master.zip
+- Put it in the `[local]` directory
 
 ## Installation
-- Add this to your `server.cfg`:
-
+- Comment this to your `server.cfg`:
 ```
+#start esx_konbini
+```
+
+- Add this to your `server.cfg`:
+```
+start esx_konbini
+```
+
 start esx_menu_dialog
 ```
 
 # Legal
 ### License
-esx_menu_dialog - input dialog for ESX
+esx_konbini - enhance vanilla esx_shops
 
-Copyright (C) 2015-2022 Jérémie N'gadi
+Copyright (C) 2015-2022 Herman Fabien
 
 This program Is free software: you can redistribute it And/Or modify it under the terms Of the GNU General Public License As published by the Free Software Foundation, either version 3 Of the License, Or (at your option) any later version.
 
