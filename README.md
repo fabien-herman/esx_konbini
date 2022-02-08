@@ -16,7 +16,7 @@ git clone https://github.com/fabien-herman/esx_konbini.git
 ## Installation
 - Comment this to your `server.cfg`:
 ```
-#start esx_konbini
+#start esx_shops
 ```
 
 - Add this to your `server.cfg`:
