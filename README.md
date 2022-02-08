@@ -1,5 +1,6 @@
 # esx_konbini
-For FiveM dev training purpose, i've created an enhanced shops menu to replace vanilla esx_shops.
+FiveM dev training purpose.
+I've created an enhanced shops menu to replace vanilla esx_shops.
 
 ## Download & Installation
 
@@ -30,7 +31,9 @@ start esx_menu_dialog
 
 # Legal
 ### License
-esx_konbini - enhance vanilla esx_shops
+esx_konbini -
+FiveM dev training purpose. I've created an enhanced shops menu to replace vanilla esx_shops.
+
 
 Copyright (C) 2015-2022 Herman Fabien
 
