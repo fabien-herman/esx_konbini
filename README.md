@@ -10,7 +10,7 @@ git clone https://github.com/fabien-herman/esx_konbini.git
 ```
 
 ### Manually
-- Download https://github.com/fabien-herman/esx_konbini/archive/master.zip
+- Download https://github.com/fabien-herman/esx_konbini/archive/main.zip
 - Put it in the `[local]` directory
 
 ## Installation
