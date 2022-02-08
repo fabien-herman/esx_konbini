@@ -12,6 +12,7 @@ git clone https://github.com/fabien-herman/esx_konbini.git
 ### Manually
 - Download https://github.com/fabien-herman/esx_konbini/archive/main.zip
 - Put it in the `[local]` directory
+- Rename folder from `esx_konbini-main` to `esx_konbini`
 
 ## Installation
 - Comment this to your `server.cfg`:
